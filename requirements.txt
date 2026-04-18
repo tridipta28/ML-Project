@@ -1,0 +1,34 @@
+# ── Core deep learning ───────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0          # optional, for completeness
+
+# ── Data handling ─────────────────────────────────────────────
+albumentations>=1.3.1      # advanced augmentation pipeline
+Pillow>=10.0.0
+numpy>=1.24.0
+scipy>=1.11.0              # Hausdorff distance
+
+# ── Visualization ─────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Training utilities ────────────────────────────────────────
+tensorboard>=2.13.0        # training curve logging
+
+# ── Deployment / export ──────────────────────────────────────
+onnx>=1.14.0
+onnxruntime-gpu>=1.16.0    # CPU-only: onnxruntime
+onnxsim>=0.4.33            # ONNX graph simplification (optional)
+
+# ── Report generation ─────────────────────────────────────────
+# LaTeX: install TeX Live / MiKTeX separately
+# pip packages below are for optional PDF generation:
+# reportlab>=4.0.0
+
+# ── Cityscapes tools (optional) ──────────────────────────────
+# cityscapesscripts>=2.2.0
+
+# ── Install command (GPU, CUDA 12.1) ─────────────────────────
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# pip install -r requirements.txt
